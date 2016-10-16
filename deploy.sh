@@ -127,7 +127,8 @@ echo Handling Basic Web Site deployment.
 if [ -e "$DEPLOYMENT_SOURCE/webpack.config.js" ]; then
   echo "Running webpack"
   cd "$DEPLOYMENT_SOURCE"
-  eval './node_modules/.bin/webpack -p --config webpack.prod.config.js'
+  #eval './node_modules/.bin/webpack -p --config webpack.prod.config.js'
+  eval 'npm run build:prod'
   exitWithMessageOnError "webpack failed"
   cd - > /dev/null
 fi
