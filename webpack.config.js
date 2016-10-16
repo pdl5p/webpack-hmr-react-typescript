@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 
-module.exports = {
+var base  = {
   devtool: 'eval',
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
@@ -37,3 +37,5 @@ module.exports = {
   }
 
 };
+
+module.exports = base;
