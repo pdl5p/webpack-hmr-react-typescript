@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Boilerplate for ReactJS project with hot code reloading",
   "scripts": {
-    "start": "node server.js",
     "lint": "eslint src",
     "build:prod": "webpack -p --config webpack.prod.config.js"
   },
