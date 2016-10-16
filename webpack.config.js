@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebPackPlugin = require('html-webpack-plugin');
 
 var base  = {
   devtool: 'eval',
@@ -9,11 +10,16 @@ var base  = {
     './src/index.tsx'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'dev'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: ''
   },
   plugins: [
+    new HtmlWebPackPlugin({
+         template: 'src/index.html',
+         inject: 'body',
+         filename: 'index.html'
+     }),
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {

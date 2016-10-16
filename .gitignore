@@ -1,7 +1,8 @@
 node_modules
 npm-debug.log
 .DS_Store
-dist
+dist/
+dev/
 src/**/*.js
 src/**/*.js.map
 
