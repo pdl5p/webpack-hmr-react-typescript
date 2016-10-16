@@ -27,6 +27,10 @@
   "bugs": {
     "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
   },
+  "engines": {
+    "node": ">=6.6.0",
+    "npm": ">=3.10.3"
+  },
   "homepage": "https://github.com/gaearon/react-hot-boilerplate",
   "devDependencies": {
     "awesome-typescript-loader": "^2.2.4",
