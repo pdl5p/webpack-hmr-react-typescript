@@ -3,11 +3,12 @@ import  { Component } from 'react';
 import  CoolComponent from  './cool';
 
 export default class App extends Component<{}, {}> {
+
+
+
   render() {
     return (
-      <div>
-        <CoolComponent />
-      </div>
+      <CoolComponent />
     );
   }
 }

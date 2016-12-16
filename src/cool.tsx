@@ -1,12 +1,25 @@
+/// <reference path="../typings/index.d.ts" />
 
 import * as React from 'react';
 
-export default class CoolComponent extends React.Component<{}, {}> {
+class CoolComponent extends React.Component<{}, {}> {
+
+  componentWillMount(){
+    console.log("MOUNT");
+  }
+
+  componentDidMount(){
+    console.log("MOUNTED");
+  }
+
   render() {
     return (
       <div>
-      <h2>!!TSX!!</h2>
+      <h2>TSX</h2>
+
       </div>
     );
   }
 }
+
+export default CoolComponent
